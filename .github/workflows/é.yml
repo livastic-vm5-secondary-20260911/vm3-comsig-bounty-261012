@@ -1,0 +1,12 @@
+name: VM3 R32 Inert Workflow 261013
+on:
+  push:
+    branches: [vm3-r32-workflow-261013]
+permissions:
+  contents: read
+jobs:
+  inert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Inert marker only
+        run: echo VM3_R32_INERT_ACTION_CANARY_261013
